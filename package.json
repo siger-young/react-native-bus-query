@@ -1,0 +1,30 @@
+{
+  "name": "BusQuery",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "node node_modules/eslint/bin/eslint .",
+    "start": "react-native start",
+    "remotedev": "remotedev-debugger --port 5678 --runserver",
+    "clean:babelrc": "find ./node_modules -name react-packager -prune -o -name '.babelrc' -print | xargs rm -f",
+    "postinstall": "npm run clean:babelrc"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-native": "^0.19.0",
+    "react-redux": "^4.0.2",
+    "redux": "^3.0.5",
+    "redux-actions": "^0.9.0",
+    "redux-logger": "^2.3.1",
+    "redux-thunk": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.1.1",
+    "eslint-plugin-import": "^0.12.1",
+    "eslint-plugin-react": "^3.11.3",
+    "remote-redux-devtools": "^0.1.2",
+    "remote-redux-devtools-on-debugger": "^0.2.6"
+  }
+}
